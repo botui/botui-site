@@ -1,0 +1,38 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #25ceb6;
+}
+
+.botui-app-container {
+  margin-top: 40px;
+}
+
+.botui-container {
+  background-color: #25ceb6;
+}
+.botui-message-content {
+  color: #12796b;
+  background-color: #b6fff5;
+}
+
+.botui-message-content.human {
+  background-color: #28635a;
+}
+
+.botui-actions-text-input {
+  color: #36887d;
+  border-bottom: 1px solid #b6fff5;
+}
+
+.botui-actions-buttons-button {
+  line-height: 1 !important;
+  background-color: #28635a;
+}
+
+.botui-message-content-link {
+  color: #12796b;
+}
