@@ -20,6 +20,7 @@ homeBot.message.add({
     }]
   });
 }).then(function (res) {
+  ga_record('btn_click', res.value);
   if(res.value == 'sure') {
     tutorial();
   }
@@ -99,8 +100,19 @@ var tutorial = function () {
 };
 
 var end = function () {
+  ga_record('message', 'end');
   homeBot.message.add({
     delay: 1000,
     content: '!(book) [Read the docs](https:///docs.botui.org) or see !(github) [GitHub](https://github.com/moinism/botui)'
   });
 };
+
+var ga_record = function(type, action) {
+  if(ga) {
+    ga('send', {
+      hitType: 'event',
+      eventCategory: type,
+      eventAction: action
+    });
+  }
+}
