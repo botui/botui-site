@@ -32,7 +32,12 @@ homeBot.message.add({
 var tutorial = function () {
   homeBot.message.add({
     delay: 1000,
-    content: "Awesome! Here's a text input .."
+    content: "Awesome! You can show buttons like the one you pressed."
+  }).then(function () {
+    return homeBot.message.add({
+      delay: 1000,
+      content: 'You can ask for text input like ..'
+    });
   }).then(function () {
     return homeBot.message.add({
       delay: 1200,
@@ -52,39 +57,20 @@ var tutorial = function () {
       content: res.value + ' is a nice name!'
     });
   }).then(function () {
+    return homeBot.message.bot({
+      delay: 1000,
+      content: 'You can show an image: ![cat](http://i.imgur.com/Cxagv.jpg)'
+    });
+  }).then(function (res) {
     return homeBot.message.add({
       delay: 1400,
-      content: "Here's a number input."
-    });
-  }).then(function () {
-    return homeBot.message.add({
-      delay: 1000,
-      content: 'How about your age?'
-    });
-  }).then(function () {
-    return homeBot.action.text({
-      delay: 800,
-      action: {
-        value: '18',
-        sub_type: 'number',
-        placeholder: 'Your age'
-      }
+      content: 'Or embed something from 3rd party'
     });
   }).then(function (res) {
     return homeBot.message.add({
-      delay: 1000,
-      content: 'Cool.'
-    });
-  }).then(function (res) {
-    return homeBot.message.add({
-      delay: 1000,
-      content: 'Here is an obligatory (embeded) gif for ya'
-    });
-  }).then(function (res) {
-    return homeBot.message.add({
-      delay: 1000,
+      delay: 1200,
       type: 'embed',
-      content: 'https://giphy.com/embed/LYDNZAzOqrez6'
+      content: 'https://giphy.com/embed/v1PSPwbLIrata'
     });
   }).then(function (res) {
     return homeBot.message.add({
@@ -103,7 +89,7 @@ var end = function () {
   ga_record('message', 'end');
   homeBot.message.add({
     delay: 1000,
-    content: '!(book) [Read the docs](https:///docs.botui.org) or see !(github) [GitHub](https://github.com/moinism/botui)'
+    content: '!(book) [Read the docs](https:///docs.botui.org), see [examples](https:///examples.botui.org) or visit !(github) [GitHub](https://github.com/moinism/botui)'
   });
 };
 
