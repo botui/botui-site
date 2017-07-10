@@ -52,19 +52,14 @@ var tutorial = function () {
       }
     });
   }).then(function (res) {
-    return homeBot.message.add({
+    return homeBot.message.bot({
       delay: 500,
       content: res.value + ' is a nice name!'
     });
-  }).then(function () {
-    return homeBot.message.bot({
-      delay: 1000,
-      content: 'You can show an image: ![cat](http://i.imgur.com/Cxagv.jpg)'
-    });
   }).then(function (res) {
-    return homeBot.message.add({
+    return homeBot.message.bot({
       delay: 1400,
-      content: 'Or embed something from 3rd party'
+      content: 'You can also embed something from 3rd party'
     });
   }).then(function (res) {
     return homeBot.message.add({
@@ -73,12 +68,12 @@ var tutorial = function () {
       content: 'https://giphy.com/embed/v1PSPwbLIrata'
     });
   }).then(function (res) {
-    return homeBot.message.add({
+    return homeBot.message.bot({
       delay: 2500,
       content: 'There is a lot more you can do with BotUI'
     });
   }).then(function (res) {
-    return homeBot.message.add({
+    return homeBot.message.bot({
       delay: 1000,
       content: 'Now go on, explore the docs and build yourself a bot.'
     });
@@ -89,7 +84,7 @@ var end = function () {
   ga_record('message', 'end');
   homeBot.message.add({
     delay: 1000,
-    content: '!(book) [Read the docs](https:///docs.botui.org), see [examples](https:///examples.botui.org) or visit !(github) [GitHub](https://github.com/moinism/botui)'
+    content: '!(book) [Read the docs](https:///docs.botui.org), see [examples](https:///examples.botui.org) or explore the code on !(github) [GitHub](https://github.com/moinism/botui)'
   });
 };
 
