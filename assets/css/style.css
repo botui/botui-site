@@ -7,6 +7,10 @@ body {
   background-color: #25ceb6;
 }
 
+iframe {
+  width: 100%;
+}
+
 .botui-app-container {
   margin-top: 40px;
 }
