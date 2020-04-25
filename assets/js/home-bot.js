@@ -65,7 +65,7 @@ var tutorial = function () {
     return homeBot.message.add({
       delay: 1200,
       type: 'embed',
-      content: 'https://giphy.com/embed/v1PSPwbLIrata'
+      content: 'https://giphy.com/embed/PxSFAnuubLkSA'
     });
   }).then(function (res) {
     return homeBot.message.bot({
