@@ -11,6 +11,16 @@ iframe {
   width: 100%;
 }
 
+.container {
+  width: 90%;
+  margin: 20px auto;
+}
+
+.bot, .video {
+  width: 50%;
+  float: left;
+}
+
 .botui-app-container {
   margin-top: 40px;
 }
