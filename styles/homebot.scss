@@ -5,7 +5,7 @@ $text-color: #E6E9ED;
 $primary-color: #ED5565;
 $secondary-color: #D8334A;
 
-@import '../../botui/packages/@botui-react/dist/styles/default.theme.scss';
+@import '../node_modules/@botui/react/dist/styles/default.theme.scss';
 
 .main-container:not(.intro-complete) {
   visibility: hidden;
