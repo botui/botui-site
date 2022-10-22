@@ -105,7 +105,7 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <div className='visible'>
-          <HomeBot onEnd={() => setIntroEnded(true)} />
+          <HomeBot hasEnded={introEnded} onEnd={() => setIntroEnded(true)} />
         </div>
 
         <div className={styles.code}>
