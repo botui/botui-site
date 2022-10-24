@@ -109,7 +109,7 @@ const Home: NextPage = () => {
         </div>
 
         <div className={styles.code}>
-          npm i botui@next @botui/react
+          npm i botui @botui/react
         </div>
 
         <div className={styles.links}>
