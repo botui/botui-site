@@ -6,7 +6,7 @@ const basePath = '/examples/'
 const ExamplesHome: NextPage = () => {
   return <div>
     {
-      examplesData.map(eg => <Link href={`${basePath}${eg.slug}`}>
+      examplesData.map(eg => <Link key={eg.slug} href={`${basePath}${eg.slug}`}>
         <a>{eg.label}</a>
       </Link>)
     }
