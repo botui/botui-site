@@ -4,7 +4,7 @@ import { examplesData } from "../../data/examples"
 
 const basePath = '/examples/'
 const ExamplesHome: NextPage = () => {
-  return <div>
+  return <div style={{ textAlign: 'center', margin: '40px 0' }}>
     {
       examplesData.map(eg => <Link key={eg.slug} href={`${basePath}${eg.slug}`}>
         <a>{eg.label}</a>
