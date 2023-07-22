@@ -75,11 +75,19 @@ const runBot = (mybot: BotuiInterface, callback: () => void) => {
 
 let timer: NodeJS.Timeout
 
-export const HomeBot = ({ onEnd, hasEnded }: { onEnd: () => void, hasEnded: boolean }) => {
+export const HomeBot = ({
+  onEnd,
+  hasEnded,
+}: {
+  onEnd: () => void
+  hasEnded: boolean
+}) => {
   const botRef = useRef(createBot())
   const mybot = botRef.current
 
   useEffect(() => {
+    console.log("hasEnded", hasEnded)
+
     if (hasEnded) return
     clearTimeout(timer)
     timer = setTimeout(() => runBot(mybot, onEnd), 50)

@@ -2,25 +2,13 @@
 $font-size: 18px;
 $botui-width: 500px;
 $text-color: #E6E9ED;
-$primary-color: #ED5565;
-$secondary-color: #D8334A;
+$primary-color: #039ca2;
+$secondary-color: rgb(19, 142, 183);
 
 @import '../node_modules/@botui/react/dist/styles/default.theme.scss';
 
-.main-container:not(.intro-complete) {
-  visibility: hidden;
+.demo_container {
+  .botui_container > * {
+    margin: 10px;
+  }
 }
-
-.visible * {
-  visibility: visible;
-}
-
-.botui_app_container {
-  // height: auto;
-}
-
-.botui_message_content {
-  line-height: 1.3;
-  padding: 8px 16px;
-}
-
