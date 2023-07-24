@@ -3,7 +3,6 @@ import { useEffect, useRef, useState } from "react"
 import { BotUI, BotUIMessageList, BotUIAction } from "@botui/react"
 
 const runBot = (myBot, callback) => {
-  console.log("runBot")
 
   myBot
     .wait({ waitTime: 1000 })
@@ -32,7 +31,6 @@ export const DemoBot = ({ onEnd = () => {}, hasEnded = false }) => {
   const myBot = botRef.current
 
   useEffect(() => {
-    console.log("effect")
     if (hasEnded) return
 
     clearTimeout(timer)
