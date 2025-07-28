@@ -1,8 +1,12 @@
 {
   "index": "Overview",
   "install": "Get Started",
-  "gotchas": "Gotchas",
   "concepts": "Concepts",
+  "gotchas": "Gotchas",
   "core": "Core",
-  "react": "React"
+  "react": "React",
+  "typescript": "TypeScript",
+  "plugins": "Plugins",
+  "error-handling": "Error Handling",
+  "advanced-examples": "Advanced Examples"
 }

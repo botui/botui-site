@@ -1,3 +1,9 @@
 {
-  "index": "Overview"
+  "index": "Overview",
+  "reference": "API Reference",
+  "custom": "Custom Components",
+  "messages": "Built-in Messages",
+  "actions": "Built-in Actions",
+  "styling": "Styling Guide",
+  "typescript": "TypeScript"
 }
